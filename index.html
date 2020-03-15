@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciutat Robada</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/font/fontface.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.4/countUp.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="assets/vsg-skin.css">
+    <link rel="stylesheet" href="assets/helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+</head>
+
+<body>
+    <div id="hero">
+        <div class="header">
+            <h1 class="title">Ciutat Robada</h1>
+            <p class="subtitle">La gentrificació als barris de Barcelona per culpa d'un model turístic que no funciona
+            </p>
+            <button class="cta-hero">Descobreix-ne més</button>
+        </div>
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="#" class="active">Inici</a></li>
+                <li><a href="#">Introducció</a></li>
+                <li><a href="#">El turisme en xifres</a></li>
+                <li><a href="#">Conseqüències</a></li>
+                <li><a href="#">Possibles solucions</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="intro">
+        <div class="quote">
+            <div class="vertical-line"></div>
+            <p class="definicio">
+                La gentrificació és la transformació socioeconòmica d’una àrea urbana
+                degradada habitada per persones de classe baixa o grups socials marginals per mitjà de
+                la rehabilitació urbanística i arquitectònica de la zona, amb l’arribada progressiva de
+                grups socials de classe mitjana o alta. <span class="font-weight-bold">El resultat és un canvi en les
+                    activitats econòmiques
+                    i, de vegades, el desplaçament dels grups socials més vulnerables.</span>
+            </p>
+        </div>
+        <div class="intro-stats">
+            <div class="stats">
+                <h1>12M</h1>
+                <p>de turistes l'any</p>
+            </div>
+            <div class="stats">
+                <h1>18.302</h1>
+                <p>apartaments d'ús turístic</p>
+            </div>
+            <div class="stats">
+                <h1>2,5</h1>
+                <p>nits de mitjana</p>
+            </div>
+        </div>
+        <div class="text-block">
+            El turisme de masses aporta grans beneficis a la ciutat
+            i la creació de milers de llocs de treball, però quines són
+            les conseqüències reals d’aquest fenomen?<br>
+            L’Ajuntament de Barcelona va posar en marxa el 2016 un pla estratègic anomenat
+            Turisme 2020 d’una duració de quatre anys, està funcionant?
+        </div>
+    </div>
+    <div id="testimoni" class="slanted-parent">
+        <div class="slanted-child">
+            <div class="quote">
+                <p>“Van <span class="font-weight-bold">apallissar a la meva parella</span> a casa.
+                    Vam avisar reiterades vegades que el propietari era perillós
+                    i ens va acabar <span class="font-weight-bold">enviant un sicari</span>”</p>
+            </div>
+            <div class="explain">
+                <div class="video">
+                    <video id="xavi" class="video-js vjs-fluid" controls preload="auto"
+                        poster="assets/img/video-xavi-thumb.png" data-setup='{"fluid": true}'>
+                        <source src="assets/vid/test-vid.mp4">
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+                <div class="transcript">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et dictum eros.
+                        Maecenas auctor tincidunt risus, sed finibus ligula imperdiet fringilla.
+                        In non ultricies nunc. Suspendisse sodales urna sagittis tellus imperdiet posuere. Morbi
+                        feugiat pulvinar libero, at facilisis justo pretium ut. Nulla at arcu auctor, placerat justo
+                        tempus,
+                        egestas purus. Sed luctus augue vel posuere consequat. Cras sagittis odio magna, ut tristique
+                        neque
+                        dignissim in.
+                        In sodales, felis in varius molestie, ipsum augue commodo diam, nec venenatis dolor eros at
+                        urna.
+                        Nam ac lectus nunc.
+                        Cras placerat aliquet mi, vitae dignissim arcu fringilla eget. Nullam quis nulla lacus. Mauris
+                        id
+                        lacus vel enim commodo ullamcorper
+                        eu eget purus. Curabitur sit amet varius purus. Integer egestas justo sit amet tincidunt
+                        porttitor.
+                        Ut posuere justo magna, sit amet blandit arcu suscipit vel.
+
+                        Integer non nulla quis lacus interdum vehicula. Quisque rhoncus tristique dui eu commodo.
+                        Curabitur
+                        turpis turpis, accumsan quis volutpat a,
+                        venenatis at nibh. Sed ut aliquam urna, quis suscipit nunc. Nunc facilisis tincidunt dolor, non
+                        rutrum metus maximus nec. Mauris eget fermentum nunc.
+                        Duis at nisl sit amet libero eleifend finibus. Suspendisse interdum tellus ac augue sagittis, eu
+                        sodales erat fermentum. Duis convallis ligula
+                        id vulputate facilisis. Nulla id rhoncus arcu, quis commodo leo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="xifres">
+        <div class="titol-container">
+            <div class="xifres-titol">El problema en xifres</div>
+
+        </div>
+        <div id="map">
+            <div class="controls-container">
+                <div class="buttons">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-sm btn-outline-primary shadow-none">
+                            <input type="radio" name="btn" id="option1" autocomplete="off"> Agrupar
+                        </label>
+                        <label class="btn btn-outline-primary btn-sm shadow-none">
+                            <input type="radio" name="btn" id="option2" autocomplete="off"> Individual
+                        </label>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio1" name="lloc">
+                        <label class="form-check-label" for="radio1">Districtes</label>
+                    </div>
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio2" name="lloc">
+                        <label class="form-check-label" for="radio2">Barris</label>
+                    </div>
+                </div>
+                <!-- <div class="divider"></div> -->
+                <div class="controls">
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio3" name="mode">
+                        <label class="form-check-label" for="radio3">Tots</label>
+                    </div>
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio4" name="mode">
+                        <label class="form-check-label" for="radio4">Pis sencer</label>
+                    </div>
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio5" name="mode">
+                        <label class="form-check-label" for="radio5">Habitació privada</label>
+                    </div>
+                    <div class="form-check form-check-inline control-group">
+                        <input type="radio" class="form-check-input form-radio" id="radio6" name="mode">
+                        <label class="form-check-label" for="radio6">Habitació compartida</label>
+                    </div>
+                </div>
+                <div class="informacio">
+                    Selecciona un mode per començar
+                </div>
+                
+            </div>
+            <div id="mapid"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+    <script src="assets/individuals.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

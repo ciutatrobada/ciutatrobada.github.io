@@ -1,0 +1,337 @@
+html {
+  font-family: 'Helvetica Neue LT Std';
+  font-size: 1.30vw;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background: #1a1a1a;
+  font-size: 100%;
+  line-height: 1;
+  color: white;
+  height: 100%;
+  font-family: inherit;
+}
+
+#hero {
+  height: 100%;
+  background: url("img/alfons-taekema-lvXeO04CxwQ-unsplash (1).png") no-repeat bottom/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7em;
+}
+
+#hero .header {
+  width: 50%;
+}
+
+#hero .header .title {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#hero .header .subtitle {
+  font-size: 1em;
+  line-height: 1.618em;
+  margin: 1.5em 0;
+}
+
+#hero .header .cta-hero {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: .5em 1em;
+  font-weight: bold;
+  -webkit-transition: background 2s cubic-bezier(0.22, 0.68, 0, 1), color 2s cubic-bezier(0.22, 0.68, 0, 1);
+  transition: background 2s cubic-bezier(0.22, 0.68, 0, 1), color 2s cubic-bezier(0.22, 0.68, 0, 1);
+}
+
+#hero .header .cta-hero:hover {
+  background: white;
+  color: black;
+}
+
+#hero .menu-container ul.menu li {
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#hero .menu-container ul.menu li:last-child {
+  margin-bottom: 0;
+}
+
+#hero .menu-container ul.menu li a {
+  text-decoration: none;
+  color: #5D5D5D;
+  -webkit-transition: color 2s cubic-bezier(0.22, 0.68, 0, 1);
+  transition: color 2s cubic-bezier(0.22, 0.68, 0, 1);
+}
+
+#hero .menu-container ul.menu li a:hover {
+  color: white;
+}
+
+#hero .menu-container ul.menu li .active {
+  color: white;
+}
+
+#intro {
+  background-color: #111111;
+  padding: 70px 0 100px 0;
+}
+
+#intro .quote {
+  padding: 0 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#intro .quote .vertical-line {
+  height: auto;
+  width: 30px;
+  background: #5D5D5D;
+  margin-right: 20px;
+}
+
+#intro .quote .definicio {
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 0;
+}
+
+#intro .intro-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px;
+  margin: 70px 13em;
+}
+
+#intro .intro-stats .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#intro .intro-stats .stats h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+#intro .intro-stats .stats p {
+  font-size: .8em;
+  margin-top: 0;
+}
+
+#intro .text-block {
+  padding: 0 20em;
+  line-height: 1.618em;
+}
+
+#testimoni {
+  padding: 0 7em;
+  background: #1a1a1a;
+  -webkit-clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+          clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+}
+
+#testimoni .quote {
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+
+#testimoni .explain .video {
+  width: 50%;
+  float: right;
+  padding: 0 0 50px 50px;
+}
+
+#testimoni .explain .transcript {
+  font-size: 1em;
+  line-height: 1.9em;
+}
+
+#xifres {
+  padding: 200px 0 100px 0;
+  background: #111111;
+  margin-top: -100px;
+}
+
+#xifres .titol-container {
+  padding: 0 7em;
+}
+
+#xifres .titol-container .xifres-titol {
+  font-size: 3em;
+  font-weight: bold;
+  color: #5D5D5D;
+  margin-bottom: 30px;
+}
+
+#xifres #map {
+  padding: 0 7em;
+}
+
+#xifres #map .controls-container {
+  height: 15vh;
+  background: #1a1a1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+#xifres #map .controls-container .buttons label {
+  white-space: nowrap;
+  padding: 12px 20px;
+  border-color: #dcc6ff;
+  color: #dcc6ff;
+}
+
+#xifres #map .controls-container .buttons label:hover {
+  background-color: #dcc6ff;
+  color: #666;
+}
+
+#xifres #map .controls-container .buttons .active {
+  background-color: #dcc6ff;
+  color: #666;
+}
+
+#xifres #map .controls-container .buttons input {
+  outline: none;
+}
+
+#xifres #map .controls-container .controls {
+  margin-left: 70px;
+  display: none;
+}
+
+#xifres #map .controls-container .controls .control-group {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+#xifres #map .controls-container .controls .control-group .form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: #f1f1f1;
+  color: #666;
+  top: -2px;
+  height: 30px;
+  width: 30px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 15px;
+  outline: none;
+  -webkit-transition: background-color 1s cubic-bezier(0.22, 0.68, 0, 1);
+  transition: background-color 1s cubic-bezier(0.22, 0.68, 0, 1);
+}
+
+#xifres #map .controls-container .controls .control-group .form-radio:checked::before {
+  position: absolute;
+  font: 15px/1 'Open Sans', sans-serif;
+  left: 11px;
+  top: 6px;
+  content: '\02143';
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+#xifres #map .controls-container .controls .control-group .form-radio:hover {
+  background-color: #969696;
+}
+
+#xifres #map .controls-container .controls .control-group .form-radio:checked {
+  background-color: #dcc6ff;
+}
+
+#xifres #map .controls-container .controls .control-group label {
+  color: #5D5D5D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+#xifres #map .controls-container .controls .control-group:last-child {
+  margin-right: 0;
+}
+
+#xifres #map .controls-container .informacio {
+  color: #5D5D5D;
+  margin-left: 50px;
+}
+
+#xifres #map #mapid {
+  height: 85vh;
+}
+
+#xifres #map .info {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: inherit;
+  background: white;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#xifres #map .info h5 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+#xifres #map .legend {
+  line-height: 25px;
+  color: #777;
+  font-size: 1.2em;
+  padding: 25px 20px;
+}
+
+#xifres #map .legend i {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+.slanted-parent {
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+  margin-top: -70px;
+}
+
+.slanted-child {
+  padding: 100px 0;
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+/*# sourceMappingURL=helpers.css.map */
