@@ -22,8 +22,15 @@
 
     line-height: 1.618em;
 }
+.text-block-starter{
+
+    margin-top: 160px;
+}
 .bg-bl{
     background-color: #111111;
+}
+.bg-pbl{
+    background-color: #000;
 }
 .bg-gr{
     background: #1a1a1a
@@ -31,12 +38,14 @@
 
 .titol-container {
     padding: 0 7em;
-
+    margin-top: -50px;
     .main-header {
-        font-size: 3em;
+        font-size: 7em;
         font-weight: bold;
-        color: #292929;
-        margin-bottom: 30px;
+        color: #1a1a1a;
+        position: absolute;
+        z-index: -3;
+        user-select: none;
     }
 }
 
@@ -70,22 +79,8 @@ a.link{
     margin: 0 auto;
     iframe{
 
-        clip-path: inset(60px 0px 60px 0px);
+        clip-path: inset(60px 0px 15% 0px);
         margin: 0 auto;
 
     }
-}
-
-.collapsible{
-    padding: 0;
-    margin: 20px 0 10px 0;
-    background: none;
-    border: none;
-    font-size: 1em;
-    color: #5d5d5d;
-}
-.content{
-    color: #5d5d5d;
-    font-size: 1em;
-
 }

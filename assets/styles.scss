@@ -21,6 +21,7 @@ body {
 
 #hero {
     height: 100%;
+    background: #111111;
     background: url("img/ciutat-robada-cover.jpg") no-repeat bottom/cover;
     display: flex;
     align-items: center;
@@ -93,8 +94,8 @@ body {
 
 #inici {
     // margin: 70px 0;
-    background-color: #111111;
-    padding: 70px 0 150px 0;
+
+    padding: 70px 0 200px 0;
 
     .quote {
         padding: 0 20em;
@@ -161,8 +162,8 @@ body {
 }
 
 #testimoni {
-    padding: 0 7em;
-    background: #000;
+    padding: 80px 7em;
+    margin-top: -100px;
     // border: 1px solid red;
     clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
 
@@ -191,14 +192,35 @@ body {
 }
 
 #introduccio {
-    padding: 200px 0 100px 0;
-    margin-top: -100px;
+    padding: 100px 0 100px 0;
+
+    // margin-top: -100px;
+    .img-container {
+        float: right;
+        width: 60%;
+        padding: 0 0 0 50px;
+        margin-right: calc(-55% + 7em);
+        // margin-top: -10px;
+
+        img {
+            width: 100%;
+        }
+
+        p.caption {
+            width: 100%;
+            text-align: right;
+            font-size: .7em;
+            color: #5d5d5d;
+            margin: 10px 0;
+        }
+    }
 
 }
 
 #xifres {
-    padding: 0px 0 100px 0;
-    background: #111111;
+
+    padding: 100px 0 0 0;
+
     // margin-top: -100px;
 
     #map {
@@ -210,6 +232,7 @@ body {
             height: 100%;
             position: relative;
             z-index: 700;
+
             .icon {
                 position: absolute;
                 right: 10px;
@@ -226,7 +249,8 @@ body {
                     }
                 }
             }
-            .popup-wrapper{
+
+            .popup-wrapper {
                 // display: flex;
                 position: absolute;
                 height: 100vh;
@@ -235,6 +259,7 @@ body {
                 align-items: center;
                 display: none;
             }
+
             .popup {
                 // display: none;
                 width: 70%;
@@ -247,7 +272,8 @@ body {
                 background: #111111;
                 border: 2px solid #292929;
                 padding: 30px 30px;
-                i{
+
+                i {
                     color: #5D5D5D;
                     transition: color 1s $cb;
                     font-size: 1.2em;
@@ -260,6 +286,7 @@ body {
                         color: #acffb2;
                     }
                 }
+
                 .ajuda-titol {
                     color: #5d5d5d;
                     font-weight: bold;
@@ -424,4 +451,38 @@ body {
         }
     }
 
+}
+
+#consequencies {
+    padding: 100px 0 0 0;
+
+    .text-block-starter {
+        margin-top: 180px;
+
+        .text-block {
+            position: relative;
+            margin-top: 10px;
+
+            .img-container {
+                margin: 50px 0;
+
+
+                img {
+                    width: calc(100vw - 14em);
+                    position: relative;
+                    left: -17vw;
+                }
+
+                p.caption {
+                    width: calc(100vw - 14em);
+                    position: relative;
+                    left: -23vw;
+                    text-align: right;
+                    font-size: .7em;
+                    color: #5d5d5d;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
 }
