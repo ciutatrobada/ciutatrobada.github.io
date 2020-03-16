@@ -9,4 +9,42 @@
   -webkit-transform: skewY(5deg);
   transform: skewY(5deg);
 }
+
+.text-block-container {
+  padding: 0 20em;
+}
+
+.text-block {
+  line-height: 1.618em;
+}
+
+.bg-bl {
+  background: #111111;
+}
+
+.bg-gr {
+  background: #1a1a1a;
+}
+
+.titol-container {
+  padding: 0 7em;
+}
+
+.titol-container .main-header {
+  font-size: 3em;
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin: 70px 0 20px 0;
+  color: #acffb2;
+  font-size: 1.5em;
+}
+
+a.link {
+  color: #acffb2;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=helpers.css.map */

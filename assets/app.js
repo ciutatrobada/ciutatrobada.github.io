@@ -8,11 +8,11 @@ var map = L.map('mapid', {
 L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
     maxZoom: 17,
     minZoom: 11,
-    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> | La localització pot no ser exacta | 16 Feb. 2020'
 }).addTo(map);
 
 // Districtes
-var gjsonDistrictes = [{
+var gjsonDistrictes = [{ 
         "type": "Feature",
         "properties": {
             "name": "Nou Barris",

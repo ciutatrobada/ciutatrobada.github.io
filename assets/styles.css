@@ -19,7 +19,7 @@ body {
 
 #hero {
   height: 100%;
-  background: url("img/alfons-taekema-lvXeO04CxwQ-unsplash (1).png") no-repeat bottom/cover;
+  background: url("img/ciutat-robada-cover.jpg") no-repeat bottom/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +45,7 @@ body {
   font-size: 1em;
   line-height: 1.618em;
   margin: 1.5em 0;
+  color: white;
 }
 
 #hero .header .cta-hero {
@@ -87,33 +88,33 @@ body {
   color: white;
 }
 
-#intro {
+#inici {
   background-color: #111111;
   padding: 70px 0 100px 0;
 }
 
-#intro .quote {
+#inici .quote {
   padding: 0 20em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#intro .quote .vertical-line {
+#inici .quote .vertical-line {
   height: auto;
   width: 30px;
-  background: #5D5D5D;
+  background: #292929;
   margin-right: 20px;
 }
 
-#intro .quote .definicio {
+#inici .quote .definicio {
   font-style: italic;
   font-size: 1em;
   line-height: 1.618em;
   margin-bottom: 0;
 }
 
-#intro .intro-stats {
+#inici .intro-stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +125,7 @@ body {
   margin: 70px 13em;
 }
 
-#intro .intro-stats .stats {
+#inici .intro-stats .stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,21 +141,18 @@ body {
           flex-direction: column;
 }
 
-#intro .intro-stats .stats h1 {
+#inici .intro-stats .stats h1 {
   font-size: 4em;
   font-weight: bold;
   margin: 0;
   line-height: 1.2em;
+  color: #acffb2;
 }
 
-#intro .intro-stats .stats p {
+#inici .intro-stats .stats p {
   font-size: .8em;
   margin-top: 0;
-}
-
-#intro .text-block {
-  padding: 0 20em;
-  line-height: 1.618em;
+  color: #5d5d5d;
 }
 
 #testimoni {
@@ -182,21 +180,15 @@ body {
   line-height: 1.9em;
 }
 
+#introduccio {
+  padding: 200px 0 100px 0;
+  margin-top: -100px;
+}
+
 #xifres {
   padding: 200px 0 100px 0;
   background: #111111;
   margin-top: -100px;
-}
-
-#xifres .titol-container {
-  padding: 0 7em;
-}
-
-#xifres .titol-container .xifres-titol {
-  font-size: 3em;
-  font-weight: bold;
-  color: #5D5D5D;
-  margin-bottom: 30px;
 }
 
 #xifres #map {
@@ -218,17 +210,17 @@ body {
 #xifres #map .controls-container .buttons label {
   white-space: nowrap;
   padding: 12px 20px;
-  border-color: #dcc6ff;
-  color: #dcc6ff;
+  border-color: #acffb2;
+  color: #acffb2;
 }
 
 #xifres #map .controls-container .buttons label:hover {
-  background-color: #dcc6ff;
+  background-color: #acffb2;
   color: #666;
 }
 
 #xifres #map .controls-container .buttons .active {
-  background-color: #dcc6ff;
+  background-color: #acffb2;
   color: #666;
 }
 
@@ -282,7 +274,7 @@ body {
 }
 
 #xifres #map .controls-container .controls .control-group .form-radio:checked {
-  background-color: #dcc6ff;
+  background-color: #acffb2;
 }
 
 #xifres #map .controls-container .controls .control-group label {
@@ -333,5 +325,10 @@ body {
   height: 25px;
   float: left;
   margin-right: 10px;
+  opacity: 0.8;
+}
+
+#xifres #map .leaflet-control-attribution {
+  opacity: .4;
 }
 /*# sourceMappingURL=styles.css.map */
