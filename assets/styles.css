@@ -469,6 +469,25 @@ body {
   margin: 10px 0;
 }
 
+#consequencies .text-block-starter .text-block .img-container-2 {
+  float: right;
+  width: 60%;
+  padding: 0 0 0 50px;
+  margin-right: calc(-57% + 7em);
+}
+
+#consequencies .text-block-starter .text-block .img-container-2 img {
+  width: 100%;
+}
+
+#consequencies .text-block-starter .text-block .img-container-2 p.caption {
+  width: 100%;
+  text-align: right;
+  font-size: .7em;
+  color: #5d5d5d;
+  margin: 10px 0;
+}
+
 #comactuar {
   padding: 100px 0 100px 0;
 }
