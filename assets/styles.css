@@ -64,28 +64,50 @@ body {
   color: black;
 }
 
-#hero .menu-container ul.menu li {
-  text-align: right;
-  margin-bottom: 10px;
-  font-weight: bold;
+.menu-container {
+  position: fixed;
+  width: 96vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  z-index: 1000;
 }
 
-#hero .menu-container ul.menu li:last-child {
+.menu-container ul.menu li {
+  text-align: right;
+  margin-bottom: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu-container ul.menu li:last-child {
   margin-bottom: 0;
 }
 
-#hero .menu-container ul.menu li a {
+.menu-container ul.menu li a {
   text-decoration: none;
   color: #5D5D5D;
+  color: rgba(255, 255, 255, 0.25);
   -webkit-transition: color 2s cubic-bezier(0.22, 0.68, 0, 1);
   transition: color 2s cubic-bezier(0.22, 0.68, 0, 1);
 }
 
-#hero .menu-container ul.menu li a:hover {
+.menu-container ul.menu li a:hover {
   color: white;
 }
 
-#hero .menu-container ul.menu li .active {
+.menu-container ul.menu li .active {
   color: white;
 }
 
