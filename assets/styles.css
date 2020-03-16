@@ -436,6 +436,22 @@ body {
   opacity: .4;
 }
 
+#xifres .img-container {
+  padding: 50px 0;
+}
+
+#xifres .img-container img {
+  width: 100%;
+}
+
+#xifres .img-container p.caption {
+  width: 100%;
+  text-align: right;
+  font-size: .7em;
+  color: #5d5d5d;
+  margin: 10px 0;
+}
+
 #consequencies {
   padding: 100px 0 100px 0;
 }
@@ -490,5 +506,9 @@ body {
 
 #comactuar {
   padding: 100px 0 100px 0;
+}
+
+#comactuar .video {
+  padding: 50px 0;
 }
 /*# sourceMappingURL=styles.css.map */

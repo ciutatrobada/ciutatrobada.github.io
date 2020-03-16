@@ -415,7 +415,7 @@ body {
             // width: 100vw;
 
         }
-
+        
         .info {
             padding: 10px 20px;
             font-size: 1.2em;
@@ -448,6 +448,23 @@ body {
 
         .leaflet-control-attribution {
             opacity: .4;
+        }
+    }
+    .img-container {
+        padding:50px 0;
+
+        // margin-top: -10px;
+
+        img {
+            width: 100%;
+        }
+
+        p.caption {
+            width: 100%;
+            text-align: right;
+            font-size: .7em;
+            color: #5d5d5d;
+            margin: 10px 0;
         }
     }
 
@@ -508,5 +525,9 @@ body {
 
 #comactuar{
     padding: 100px 0 100px 0;
+    .video {
+
+        padding:50px 0;
+    }
 
 }
