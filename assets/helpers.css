@@ -19,7 +19,7 @@
 }
 
 .bg-bl {
-  background: #111111;
+  background-color: #111111;
 }
 
 .bg-gr {
@@ -65,6 +65,7 @@ a.link {
 }
 
 .grafic {
+  overflow: hidden;
   padding: 0 20em;
   margin: 0 auto;
 }

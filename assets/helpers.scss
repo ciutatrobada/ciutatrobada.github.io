@@ -23,7 +23,7 @@
     line-height: 1.618em;
 }
 .bg-bl{
-    background: #111111;
+    background-color: #111111;
 }
 .bg-gr{
     background: #1a1a1a
@@ -65,10 +65,11 @@ a.link{
 }
 .grafic{
 
-
+    overflow: hidden;
     padding: 0 20em;
     margin: 0 auto;
     iframe{
+
         clip-path: inset(60px 0px 60px 0px);
         margin: 0 auto;
 
