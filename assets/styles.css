@@ -437,7 +437,7 @@ body {
 }
 
 #consequencies {
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
 }
 
 #consequencies .text-block-starter {
@@ -467,5 +467,9 @@ body {
   font-size: .7em;
   color: #5d5d5d;
   margin: 10px 0;
+}
+
+#comactuar {
+  padding: 100px 0 100px 0;
 }
 /*# sourceMappingURL=styles.css.map */
