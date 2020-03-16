@@ -90,24 +90,37 @@ body {
 
 #inici {
   background-color: #111111;
-  padding: 70px 0 100px 0;
+  padding: 70px 0 150px 0;
 }
 
 #inici .quote {
   padding: 0 20em;
+}
+
+#inici .quote .quote-inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 0 26px;
 }
 
-#inici .quote .vertical-line {
-  height: auto;
-  width: 30px;
+#inici .quote .quote-inner .vertical-line {
+  height: 100%;
+  width: 7px;
   background: #292929;
   margin-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1px;
 }
 
-#inici .quote .definicio {
+#inici .quote .quote-inner .definicio {
   font-style: italic;
   font-size: 1em;
   line-height: 1.618em;
@@ -186,13 +199,86 @@ body {
 }
 
 #xifres {
-  padding: 200px 0 100px 0;
+  padding: 0px 0 100px 0;
   background: #111111;
-  margin-top: -100px;
 }
 
 #xifres #map {
   padding: 0 7em;
+}
+
+#xifres #map .help {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 700;
+}
+
+#xifres #map .help .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#xifres #map .help .icon i {
+  color: #5d5d5d;
+  -webkit-transition: color 1s cubic-bezier(0.22, 0.68, 0, 1);
+  transition: color 1s cubic-bezier(0.22, 0.68, 0, 1);
+  font-size: 1.2em;
+}
+
+#xifres #map .help .icon i:hover {
+  color: #acffb2;
+}
+
+#xifres #map .help .popup-wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#xifres #map .help .popup {
+  width: 70%;
+  position: relative;
+  background: #111111;
+  border: 2px solid #292929;
+  padding: 30px 30px;
+}
+
+#xifres #map .help .popup i {
+  color: #5D5D5D;
+  -webkit-transition: color 1s cubic-bezier(0.22, 0.68, 0, 1);
+  transition: color 1s cubic-bezier(0.22, 0.68, 0, 1);
+  font-size: 1.2em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#xifres #map .help .popup i:hover {
+  color: #acffb2;
+}
+
+#xifres #map .help .popup .ajuda-titol {
+  color: #5d5d5d;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#xifres #map .help .popup .content {
+  color: #FFF;
+  font-size: .8em;
+  line-height: 1.7em;
 }
 
 #xifres #map .controls-container {

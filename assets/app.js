@@ -1,3 +1,4 @@
+
 var map = L.map('mapid', {
     scrollWheelZoom: false,
     dragging: true,
@@ -23802,3 +23803,22 @@ menuBtns.addEventListener('click', e => {
     }
 
 })
+
+// Map help
+
+var helpIcon = document.querySelector('.icon');
+var closeIcon = document.querySelector('.popup > i');
+var popup = document.querySelector('.popup-wrapper');
+
+var openHelp = function() {
+    helpIcon.style.display = "none";
+    popup.style.display = "flex";
+}
+
+var closeHelp = function(){
+    helpIcon.style.display = "block";
+    popup.style.display = "none";
+}
+
+helpIcon.addEventListener('click', openHelp)
+closeIcon.addEventListener('click', closeHelp)

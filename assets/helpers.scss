@@ -50,3 +50,41 @@ a.link{
     color: #acffb2;
     text-decoration: underline;
 }
+.image-container{
+    margin: 50px 0 40px 0;
+    img.image-block{
+        width: 100%;
+    }
+    p.caption{
+        width: 100%;
+        text-align: right;
+        font-size: .7em;
+        color: #5d5d5d;
+        margin: 10px 0;
+    }
+}
+.grafic{
+
+
+    padding: 0 20em;
+    margin: 0 auto;
+    iframe{
+        clip-path: inset(60px 0px 60px 0px);
+        margin: 0 auto;
+
+    }
+}
+
+.collapsible{
+    padding: 0;
+    margin: 20px 0 10px 0;
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: #5d5d5d;
+}
+.content{
+    color: #5d5d5d;
+    font-size: 1em;
+
+}
