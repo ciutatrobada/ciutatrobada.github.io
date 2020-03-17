@@ -60,23 +60,26 @@ body {
         }
     }
 
-    
+
 }
 
 .menu-container {
     position: fixed;
-    width: 96vw;
+    width: 11em;
     height: 100vh;
+    right: 2em;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     z-index: 1000;
+
     ul.menu {
         li {
             text-align: right;
             margin-bottom: 20px;
             font-weight: bold;
             user-select: none;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -424,7 +427,7 @@ body {
             // width: 100vw;
 
         }
-        
+
         .info {
             padding: 10px 20px;
             font-size: 1.2em;
@@ -459,8 +462,9 @@ body {
             opacity: .4;
         }
     }
+
     .img-container {
-        padding:50px 0;
+        padding: 50px 0;
 
         // margin-top: -10px;
 
@@ -509,17 +513,18 @@ body {
                     margin: 10px 0;
                 }
             }
+
             .img-container-2 {
                 float: right;
                 width: 60%;
                 padding: 0 0 0 50px;
                 margin-right: calc(-57% + 7em);
                 // margin-top: -10px;
-        
+
                 img {
                     width: 100%;
                 }
-        
+
                 p.caption {
                     width: 100%;
                     text-align: right;
@@ -532,11 +537,69 @@ body {
     }
 }
 
-#comactuar{
+#comactuar {
     padding: 100px 0 100px 0;
+
     .video {
 
-        padding:50px 0;
+        padding: 50px 0;
     }
 
+}
+
+.footer {
+    position: relative;
+    z-index: 30;
+    width: 100vw;
+    padding: 50px 0;
+    margin-top: -100px;
+    border-top: 1px solid #5d5d5d;
+
+    .credits {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: .7em;
+        letter-spacing: 2px;
+
+        .title {
+            color: #5D5D5D;
+            line-height: 2em;
+            margin-bottom: 50px;
+        }
+
+        a.name {
+            text-decoration: none;
+
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .sub {
+            font-weight: normal;
+            margin-bottom: 15px;
+            color: #d5d5d5;
+        }
+
+        .agraiments {
+            color: #5D5D5D;
+
+            .sub {
+                font-weight: normal;
+                margin-bottom: 15px;
+                color: #d5d5d5;
+
+                margin-top: 50px;
+            }
+            .ty{
+                // color: #d5d5d5;
+            color: #5D5D5D;
+            margin-bottom: 10px;
+
+                a{
+            color: #5D5D5D;
+                }
+            }
+        }
+    }
 }

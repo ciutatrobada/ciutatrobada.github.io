@@ -66,8 +66,9 @@ body {
 
 .menu-container {
   position: fixed;
-  width: 96vw;
+  width: 11em;
   height: 100vh;
+  right: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,5 +533,60 @@ body {
 
 #comactuar .video {
   padding: 50px 0;
+}
+
+.footer {
+  position: relative;
+  z-index: 30;
+  width: 100vw;
+  padding: 50px 0;
+  margin-top: -100px;
+  border-top: 1px solid #5d5d5d;
+}
+
+.footer .credits {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: .7em;
+  letter-spacing: 2px;
+}
+
+.footer .credits .title {
+  color: #5D5D5D;
+  line-height: 2em;
+  margin-bottom: 50px;
+}
+
+.footer .credits a.name {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .credits .sub {
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #d5d5d5;
+}
+
+.footer .credits .agraiments {
+  color: #5D5D5D;
+}
+
+.footer .credits .agraiments .sub {
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #d5d5d5;
+  margin-top: 50px;
+}
+
+.footer .credits .agraiments .ty {
+  color: #5D5D5D;
+  margin-bottom: 10px;
+}
+
+.footer .credits .agraiments .ty a {
+  color: #5D5D5D;
 }
 /*# sourceMappingURL=styles.css.map */
