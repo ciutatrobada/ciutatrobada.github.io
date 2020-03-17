@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    z-index: 1000;
+    z-index: 399;
 
     ul.menu {
         li {
@@ -191,7 +191,8 @@ body {
         .video {
             width: 50%;
             float: right;
-            padding: 0 0 50px 50px
+            margin: 0 0 50px 50px;
+            z-index: 400;
         }
 
         .transcript {
@@ -243,7 +244,7 @@ body {
             width: 100%;
             height: 100%;
             position: relative;
-            z-index: 700;
+            z-index: 401;
 
             .icon {
                 position: absolute;
@@ -541,8 +542,9 @@ body {
     padding: 100px 0 100px 0;
 
     .video {
+        z-index: 400;
 
-        padding: 50px 0;
+        margin: 50px 0;
     }
 
 }
