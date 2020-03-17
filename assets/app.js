@@ -23899,7 +23899,9 @@ $(window).scroll(function () {
 
     }
 });
+// document.querySelectorAll('.menu-container-top').forEach((e) => {
 
+// })
 //Don't allow mobile
 function myFunction(x) {
     if (x.matches) { // If media query matches
@@ -23922,9 +23924,9 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 if (L.Browser.edge || L.Browser.ie) {
     document.querySelector('.rectangle-ie-1').style.display = "block";
-    document.querySelector('.rectangle-ie-1').style.display = "block";
+    document.querySelector('.rectangle-ie-2').style.display = "block";
 
 } else {
-    document.querySelector('.rectangle-ie-1').style.display = "block";
-    document.querySelector('.rectangle-ie-1').style.display = "block";
+    document.querySelector('.rectangle-ie-1').style.display = "none";
+    document.querySelector('.rectangle-ie-2').style.display = "none";
 }
