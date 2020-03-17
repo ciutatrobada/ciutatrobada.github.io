@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7em;
+    padding: 0 9%;
 
     .header {
         width: 50%;
@@ -42,25 +42,10 @@ body {
         .subtitle {
             font-size: 1em;
             line-height: 1.618em;
-            margin: 1.5em 0;
+            margin: 5% 0;
             color: white;
         }
 
-        .cta-hero {
-            border: 1px solid white;
-            background: none;
-            color: white;
-            padding: .5em 1em;
-            font-weight: bold;
-
-            transition: background 2s cubic-bezier(.22, .68, 0, 1),
-                color 2s cubic-bezier(.22, .68, 0, 1);
-
-            &:hover {
-                background: white;
-                color: black;
-            }
-        }
     }
 
 
@@ -124,7 +109,7 @@ body {
 .menu-container-hero {
 
     position: relative;
-    width: 11em;
+    width: 20%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -168,7 +153,7 @@ body {
     padding: 70px 0 200px 0;
 
     .quote {
-        padding: 0 20em;
+        padding: 0 26%;
 
         .quote-inner {
             position: relative;
@@ -202,7 +187,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 20px 50px;
-        margin: 70px 13em;
+        margin: 70px 16%;
 
 
         .stats {
@@ -232,7 +217,7 @@ body {
 }
 
 #testimoni {
-    padding: 80px 7em;
+    padding: 80px 9%;
     margin-top: -100px;
     // border: 1px solid red;
     clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
@@ -270,7 +255,7 @@ body {
         float: right;
         width: 60%;
         padding: 0 0 0 50px;
-        margin-right: calc(-55% + 7em);
+        margin-right: calc(-55% + 9%);
         // margin-top: -10px;
 
         img {
@@ -295,7 +280,7 @@ body {
     // margin-top: -100px;
 
     #map {
-        padding: 0 7em;
+        padding: 0 9%;
         margin: 50px 0;
 
         .help {
@@ -379,7 +364,7 @@ body {
             display: flex;
             align-items: center;
             // justify-content: space-between;
-            padding: 0 2em;
+            padding: 0 3%;
 
             .buttons {
                 label {
@@ -557,13 +542,14 @@ body {
 
 
                 img {
-                    width: calc(100vw - 14em);
+
+                    width: calc(100vw - 39%);
                     position: relative;
                     left: -17vw;
                 }
 
                 p.caption {
-                    width: calc(100vw - 14em);
+                    width: calc(100vw - 27%);
                     position: relative;
                     left: -23vw;
                     text-align: right;
@@ -577,7 +563,7 @@ body {
                 float: right;
                 width: 60%;
                 padding: 0 0 0 50px;
-                margin-right: calc(-57% + 7em);
+                margin-right: calc(-57% + 21%);
                 // margin-top: -10px;
 
                 img {

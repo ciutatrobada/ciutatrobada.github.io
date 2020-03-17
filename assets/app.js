@@ -23482,8 +23482,8 @@ menuBtns.addEventListener('click', e => {
                         indivMarker = L.geoJson(gjsonIndiv, {
                             pointToLayer: function (feature, coordinates) {
                                 return L.circleMarker(coordinates, {
-                                    fillColor: getColor(feature.properties.room_type),
-                                    color: getColor(feature.properties.room_type),
+                                    fillColor: getColor(feature.properties.e),
+                                    color: getColor(feature.properties.e),
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
@@ -23500,7 +23500,7 @@ menuBtns.addEventListener('click', e => {
 
                         info3.update = function (props) {
 
-                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+                            this._div.innerHTML = (props ? '<h5>' + props.e + '</h5>' + '<b>' + props.b + ', ' + props.c + '</b><br />' + props.p + '€/nit' + '<br>' + props.a + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23533,7 +23533,7 @@ menuBtns.addEventListener('click', e => {
                     } else if (x.target.id == "radio4" && x.target.checked) {
 
                         function roomTypeFilter(feature) {
-                            if (feature.properties.room_type === "Pis sencer") return true
+                            if (feature.properties.e === "Pis sencer") return true
                         }
 
                         function getColor(d) {
@@ -23573,8 +23573,8 @@ menuBtns.addEventListener('click', e => {
                         indivMarker = L.geoJson(gjsonIndiv, {
                             pointToLayer: function (feature, coordinates) {
                                 return L.circleMarker(coordinates, {
-                                    fillColor: getColor(feature.properties.room_type),
-                                    color: getColor(feature.properties.room_type),
+                                    fillColor: getColor(feature.properties.e),
+                                    color: getColor(feature.properties.e),
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
@@ -23593,7 +23593,7 @@ menuBtns.addEventListener('click', e => {
 
                         info3.update = function (props) {
 
-                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+                            this._div.innerHTML = (props ? '<h5>' + props.e + '</h5>' + '<b>' + props.b + ', ' + props.c + '</b><br />' + props.p + '€/nit' + '<br>' + props.a + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23624,7 +23624,7 @@ menuBtns.addEventListener('click', e => {
 
                     } else if (x.target.id == "radio5" && x.target.checked) {
                         function roomTypeFilter(feature) {
-                            if (feature.properties.room_type === "Habitació privada") return true
+                            if (feature.properties.e === "Habitació privada") return true
                         }
 
                         function getColor(d) {
@@ -23665,8 +23665,8 @@ menuBtns.addEventListener('click', e => {
                         indivMarker = L.geoJson(gjsonIndiv, {
                             pointToLayer: function (feature, coordinates) {
                                 return L.circleMarker(coordinates, {
-                                    fillColor: getColor(feature.properties.room_type),
-                                    color: getColor(feature.properties.room_type),
+                                    fillColor: getColor(feature.properties.e),
+                                    color: getColor(feature.properties.e),
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
@@ -23685,7 +23685,7 @@ menuBtns.addEventListener('click', e => {
 
                         info3.update = function (props) {
 
-                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+                            this._div.innerHTML = (props ? '<h5>' + props.e + '</h5>' + '<b>' + props.b + ', ' + props.c + '</b><br />' + props.p + '€/nit' + '<br>' + props.a + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23711,7 +23711,7 @@ menuBtns.addEventListener('click', e => {
                         legend3.addTo(map);
                     } else {
                         function roomTypeFilter(feature) {
-                            if (feature.properties.room_type === "Habitació compartida") return true
+                            if (feature.properties.e === "Habitació compartida") return true
                         }
 
                         function getColor(d) {
@@ -23751,8 +23751,8 @@ menuBtns.addEventListener('click', e => {
                         indivMarker = L.geoJson(gjsonIndiv, {
                             pointToLayer: function (feature, coordinates) {
                                 return L.circleMarker(coordinates, {
-                                    fillColor: getColor(feature.properties.room_type),
-                                    color: getColor(feature.properties.room_type),
+                                    fillColor: getColor(feature.properties.e),
+                                    color: getColor(feature.properties.e),
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
@@ -23771,7 +23771,7 @@ menuBtns.addEventListener('click', e => {
 
                         info3.update = function (props) {
 
-                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+                            this._div.innerHTML = (props ? '<h5>' + props.e + '</h5>' + '<b>' + props.b + ', ' + props.c + '</b><br />' + props.p + '€/nit' + '<br>' + props.a + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23906,6 +23906,7 @@ $(window).scroll(function () {
 function myFunction(x) {
     if (x.matches) { // If media query matches
         // document.body.style.backgroundColor = "yellow";
+
         window.scrollTo(0, 0);
         document.querySelector('.no-mobile').style.display = "block";
         document.body.style.overflowY = "hidden";
@@ -23918,7 +23919,7 @@ function myFunction(x) {
     }
 }
 
-var x = window.matchMedia("(max-width: 1023px)")
+var x = window.matchMedia("(max-width: 1020px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 

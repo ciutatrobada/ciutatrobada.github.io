@@ -36,7 +36,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 7em;
+  padding: 0 9%;
 }
 
 #hero .header {
@@ -51,23 +51,8 @@ body {
 #hero .header .subtitle {
   font-size: 1em;
   line-height: 1.618em;
-  margin: 1.5em 0;
+  margin: 5% 0;
   color: white;
-}
-
-#hero .header .cta-hero {
-  border: 1px solid white;
-  background: none;
-  color: white;
-  padding: .5em 1em;
-  font-weight: bold;
-  -webkit-transition: background 2s cubic-bezier(0.22, 0.68, 0, 1), color 2s cubic-bezier(0.22, 0.68, 0, 1);
-  transition: background 2s cubic-bezier(0.22, 0.68, 0, 1), color 2s cubic-bezier(0.22, 0.68, 0, 1);
-}
-
-#hero .header .cta-hero:hover {
-  background: white;
-  color: black;
 }
 
 .menu-container-top {
@@ -138,7 +123,7 @@ body {
 
 .menu-container-hero {
   position: relative;
-  width: 11em;
+  width: 20%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +172,7 @@ body {
 }
 
 #inici .quote {
-  padding: 0 20em;
+  padding: 0 26%;
 }
 
 #inici .quote .quote-inner {
@@ -228,7 +213,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 50px;
-  margin: 70px 13em;
+  margin: 70px 16%;
 }
 
 #inici .intro-stats .stats {
@@ -262,7 +247,7 @@ body {
 }
 
 #testimoni {
-  padding: 80px 7em;
+  padding: 80px 9%;
   margin-top: -100px;
   -webkit-clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
           clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
@@ -295,7 +280,7 @@ body {
   float: right;
   width: 60%;
   padding: 0 0 0 50px;
-  margin-right: calc(-55% + 7em);
+  margin-right: calc(-55% + 9%);
 }
 
 #introduccio .img-container img {
@@ -315,7 +300,7 @@ body {
 }
 
 #xifres #map {
-  padding: 0 7em;
+  padding: 0 9%;
   margin: 50px 0;
 }
 
@@ -402,7 +387,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2em;
+  padding: 0 3%;
 }
 
 #xifres #map .controls-container .buttons label {
@@ -564,13 +549,13 @@ body {
 }
 
 #consequencies .text-block-starter .text-block .img-container img {
-  width: calc(100vw - 14em);
+  width: calc(100vw - 39%);
   position: relative;
   left: -17vw;
 }
 
 #consequencies .text-block-starter .text-block .img-container p.caption {
-  width: calc(100vw - 14em);
+  width: calc(100vw - 27%);
   position: relative;
   left: -23vw;
   text-align: right;
@@ -583,7 +568,7 @@ body {
   float: right;
   width: 60%;
   padding: 0 0 0 50px;
-  margin-right: calc(-57% + 7em);
+  margin-right: calc(-57% + 21%);
 }
 
 #consequencies .text-block-starter .text-block .img-container-2 img {
