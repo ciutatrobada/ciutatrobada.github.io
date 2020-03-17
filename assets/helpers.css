@@ -85,12 +85,8 @@ a.link {
 }
 
 .grafic iframe {
+  -webkit-clip-path: inset(60px 0px 15% 0px);
+          clip-path: inset(60px 0px 15% 0px);
   margin: 0 auto;
-}
-
-.grafic iframe:after {
-  position: absolute;
-  content: " ";
-  top: 0;
 }
 /*# sourceMappingURL=helpers.css.map */
