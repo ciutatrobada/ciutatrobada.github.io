@@ -79,8 +79,14 @@ a.link{
     margin: 0 auto;
     iframe{
 
-        clip-path: inset(60px 0px 15% 0px);
+        // clip-path: inset(60px 0px 15% 0px);
         margin: 0 auto;
+        &:after{
+
+                position:absolute;
+                content: " ";
+                top: 0;
+        }
 
     }
 }

@@ -23878,11 +23878,25 @@ $(window).scroll(function () {
     } else{
         // menuItems.parent().parent().parent().addClass("invisible")
     }
+    var mapDistance = window.pageYOffset + document.querySelector('#premap').getBoundingClientRect().top;
+    var postMap = window.pageYOffset + document.querySelector('#postmap').getBoundingClientRect().top;
 
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
-        document.querySelector(".menu-container-top").style.top = "0";
-    } else {
+        if(document.body.scrollTop > mapDistance || document.documentElement.scrollTop > mapDistance){
+            if(document.body.scrollTop > postMap || document.documentElement.scrollTop > postMap){
+                document.querySelector(".menu-container-top").style.top = "0";
+            } else{
+                document.querySelector(".menu-container-top").style.top = "-10vh";
+            }
+
+        } else{
+            document.querySelector(".menu-container-top").style.top = "0";
+
+        }
+    } else{
         document.querySelector(".menu-container-top").style.top = "-10vh";
+        console.log('yep');
+        
     }
 });
 
@@ -23905,3 +23919,5 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 1023px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
+
+// if(L.Browser)
