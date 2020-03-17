@@ -23874,29 +23874,29 @@ $(window).scroll(function () {
             // .parent().parent().addClass("invisible")
             .parent().removeClass("active")
             .end().filter("[href='#" + id + "']").parent().addClass("active")
-            // .parent().parent().removeClass("invisible")
-    } else{
+        // .parent().parent().removeClass("invisible")
+    } else {
         // menuItems.parent().parent().parent().addClass("invisible")
     }
     var mapDistance = window.pageYOffset + document.querySelector('#premap').getBoundingClientRect().top;
     var postMap = window.pageYOffset + document.querySelector('#postmap').getBoundingClientRect().top;
 
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
-        if(document.body.scrollTop > mapDistance || document.documentElement.scrollTop > mapDistance){
-            if(document.body.scrollTop > postMap || document.documentElement.scrollTop > postMap){
+        if (document.body.scrollTop > mapDistance || document.documentElement.scrollTop > mapDistance) {
+            if (document.body.scrollTop > postMap || document.documentElement.scrollTop > postMap) {
                 document.querySelector(".menu-container-top").style.top = "0";
-            } else{
+            } else {
                 document.querySelector(".menu-container-top").style.top = "-10vh";
             }
 
-        } else{
+        } else {
             document.querySelector(".menu-container-top").style.top = "0";
 
         }
-    } else{
+    } else {
         document.querySelector(".menu-container-top").style.top = "-10vh";
-        console.log('yep');
-        
+
+
     }
 });
 
@@ -23908,10 +23908,10 @@ function myFunction(x) {
         document.querySelector('.no-mobile').style.display = "block";
         document.body.style.overflowY = "hidden";
     } else {
-        console.log('doesnt');
-        if(document.body.style.overflowY == "hidden"){
+
+        if (document.body.style.overflowY == "hidden") {
             document.querySelector('.no-mobile').style.display = "none";
-            document.body.style="";
+            document.body.style = "";
         }
     }
 }
@@ -23920,4 +23920,11 @@ var x = window.matchMedia("(max-width: 1023px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 
-// if(L.Browser)
+if (L.Browser.edge || L.Browser.ie) {
+    document.querySelector('.rectangle-ie-1').style.display = "block";
+    document.querySelector('.rectangle-ie-1').style.display = "block";
+
+} else {
+    document.querySelector('.rectangle-ie-1').style.display = "block";
+    document.querySelector('.rectangle-ie-1').style.display = "block";
+}
