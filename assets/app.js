@@ -1,4 +1,3 @@
-
 var map = L.map('mapid', {
     scrollWheelZoom: false,
     dragging: true,
@@ -13,7 +12,7 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{
 }).addTo(map);
 
 // Districtes
-var gjsonDistrictes = [{ 
+var gjsonDistrictes = [{
         "type": "Feature",
         "properties": {
             "name": "Nou Barris",
@@ -23162,7 +23161,7 @@ function resetMap() {
         info.remove(map);
         legend.remove(map);
     }
-    if(map.hasLayer(indivMarker)){
+    if (map.hasLayer(indivMarker)) {
         indivMarker.remove(map);
         info3.remove(map);
         legend3.remove(map);
@@ -23471,6 +23470,7 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         var counter = 0;
+
                         function onEachFeature(feature, layer) {
                             layer.on({
                                 mouseover: highlightFeature,
@@ -23499,8 +23499,8 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         info3.update = function (props) {
-                        
-                            this._div.innerHTML =  (props ? '<h5>' + props.room_type + '</h5>' +  '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' :  '<h5>'+ counter.toLocaleString("es-ES") +' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+
+                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23530,10 +23530,10 @@ menuBtns.addEventListener('click', e => {
 
 
 
-                    } else if(x.target.id == "radio4" && x.target.checked) {
+                    } else if (x.target.id == "radio4" && x.target.checked) {
 
-                        function roomTypeFilter(feature){
-                            if(feature.properties.room_type === "Pis sencer") return true
+                        function roomTypeFilter(feature) {
+                            if (feature.properties.room_type === "Pis sencer") return true
                         }
 
                         function getColor(d) {
@@ -23561,6 +23561,7 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         var counter = 0;
+
                         function onEachFeature(feature, layer) {
                             layer.on({
                                 mouseover: highlightFeature,
@@ -23577,7 +23578,7 @@ menuBtns.addEventListener('click', e => {
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
-                                    
+
                                 })
                             },
                             filter: roomTypeFilter,
@@ -23591,8 +23592,8 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         info3.update = function (props) {
-                        
-                            this._div.innerHTML =  (props ? '<h5>' + props.room_type + '</h5>' +  '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' :  '<h5>'+ counter.toLocaleString("es-ES") +' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+
+                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23621,9 +23622,9 @@ menuBtns.addEventListener('click', e => {
 
 
 
-                    } else if(x.target.id == "radio5" && x.target.checked){
-                        function roomTypeFilter(feature){
-                            if(feature.properties.room_type === "Habitació privada") return true
+                    } else if (x.target.id == "radio5" && x.target.checked) {
+                        function roomTypeFilter(feature) {
+                            if (feature.properties.room_type === "Habitació privada") return true
                         }
 
                         function getColor(d) {
@@ -23650,6 +23651,7 @@ menuBtns.addEventListener('click', e => {
                             info3.update();
                         }
                         var counter = 0;
+
                         function onEachFeature(feature, layer) {
                             layer.on({
                                 mouseover: highlightFeature,
@@ -23657,9 +23659,9 @@ menuBtns.addEventListener('click', e => {
                             });
                             counter++;
                         }
-                        
 
-                        
+
+
                         indivMarker = L.geoJson(gjsonIndiv, {
                             pointToLayer: function (feature, coordinates) {
                                 return L.circleMarker(coordinates, {
@@ -23668,7 +23670,7 @@ menuBtns.addEventListener('click', e => {
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
-                                    
+
                                 })
                             },
                             filter: roomTypeFilter,
@@ -23680,10 +23682,10 @@ menuBtns.addEventListener('click', e => {
                             this.update();
                             return this._div;
                         }
-                        
+
                         info3.update = function (props) {
-                        
-                            this._div.innerHTML =  (props ? '<h5>' + props.room_type + '</h5>' +  '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' :  '<h5>'+ counter.toLocaleString("es-ES") +' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+
+                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23707,9 +23709,9 @@ menuBtns.addEventListener('click', e => {
                         };
 
                         legend3.addTo(map);
-                    } else{
-                        function roomTypeFilter(feature){
-                            if(feature.properties.room_type === "Habitació compartida") return true
+                    } else {
+                        function roomTypeFilter(feature) {
+                            if (feature.properties.room_type === "Habitació compartida") return true
                         }
 
                         function getColor(d) {
@@ -23737,6 +23739,7 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         var counter = 0;
+
                         function onEachFeature(feature, layer) {
                             layer.on({
                                 mouseover: highlightFeature,
@@ -23753,7 +23756,7 @@ menuBtns.addEventListener('click', e => {
                                     fillOpacity: .8,
                                     radius: 2,
                                     weight: 1,
-                                    
+
                                 })
                             },
                             filter: roomTypeFilter,
@@ -23767,8 +23770,8 @@ menuBtns.addEventListener('click', e => {
                         }
 
                         info3.update = function (props) {
-                        
-                            this._div.innerHTML =  (props ? '<h5>' + props.room_type + '</h5>' +  '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' :  '<h5>'+ counter.toLocaleString("es-ES") +' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
+
+                            this._div.innerHTML = (props ? '<h5>' + props.room_type + '</h5>' + '<b>' + props.neighbourhood + ', ' + props.neighbourhood_group + '</b><br />' + props.price + '€/nit' + '<br>' + props.availability_365 + '/365 dies disponible' : '<h5>' + counter.toLocaleString("es-ES") + ' HUTs</h5>' + "Mou el cursor per sobre d'un HUT");
                         }
                         info3.addTo(map);
 
@@ -23810,15 +23813,95 @@ var helpIcon = document.querySelector('.icon');
 var closeIcon = document.querySelector('.popup > i');
 var popup = document.querySelector('.popup-wrapper');
 
-var openHelp = function() {
+var openHelp = function () {
     helpIcon.style.display = "none";
     popup.style.display = "flex";
 }
 
-var closeHelp = function(){
+var closeHelp = function () {
     helpIcon.style.display = "block";
     popup.style.display = "none";
 }
 
 helpIcon.addEventListener('click', openHelp)
 closeIcon.addEventListener('click', closeHelp)
+
+// End map
+
+// Cache selectors
+var lastId,
+    topMenu = $(".menu-container-top"),
+    topMenuHeight = topMenu.outerHeight() + 15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function () {
+        var item = $($(this).attr("href"));
+        if (item.length) {
+            return item;
+        }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function (e) {
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 300);
+    e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function () {
+    // Get container scroll position
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function () {
+        if ($(this).offset().top < fromTop)
+            return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            // .parent().parent().addClass("invisible")
+            .parent().removeClass("active")
+            .end().filter("[href='#" + id + "']").parent().addClass("active")
+            // .parent().parent().removeClass("invisible")
+    } else{
+        // menuItems.parent().parent().parent().addClass("invisible")
+    }
+
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+        document.querySelector(".menu-container-top").style.top = "0";
+    } else {
+        document.querySelector(".menu-container-top").style.top = "-10vh";
+    }
+});
+
+//Don't allow mobile
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        // document.body.style.backgroundColor = "yellow";
+        window.scrollTo(0, 0);
+        document.querySelector('.no-mobile').style.display = "block";
+        document.body.style.overflowY = "hidden";
+    } else {
+        console.log('doesnt');
+        if(document.body.style.overflowY == "hidden"){
+            document.querySelector('.no-mobile').style.display = "none";
+            document.body.style="";
+        }
+    }
+}
+
+var x = window.matchMedia("(max-width: 1023px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes

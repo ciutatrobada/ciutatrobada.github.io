@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="menu-container">
+    <div class="menu-container-top">
         <ul class="menu">
             <li><a href="#inici">Inici</a></li>
             <li><a href="#introduccio">Introducció</a></li>
@@ -30,12 +30,22 @@
             <li><a href="#comactuar">Com actuar</a></li>
         </ul>
     </div>
+    
     <div id="hero">
+        
         <div class="header">
             <h1 class="title">Ciutat Robada</h1>
             <p class="subtitle">La gentrificació als barris de Barcelona per culpa d'un model turístic que no funciona
             </p>
-
+        </div>
+        <div class="menu-container-hero visible">
+            <ul class="menu">
+                <li><a href="#inici">Inici</a></li>
+                <li><a href="#introduccio">Introducció</a></li>
+                <li><a href="#xifres">El problema en xifres</a></li>
+                <li><a href="#consequencies">Conseqüències</a></li>
+                <li><a href="#comactuar">Com actuar</a></li>
+            </ul>
         </div>
     </div>
     <div id="inici" class="bg-bl">
@@ -484,7 +494,12 @@
             </div>
         </div>
     </div>
-
+    <div class="no-mobile">
+        <h1>:(</h1>
+        <h2>Aquest reportatge només està disponible per a pantalles més grans</h2>
+        <h4>Accedeix al web a través d'un ordinador o portàtil.</h4>
+        <h6>Vols que sigui disponible per a mòbls? <a href="mailto:ajimenezbu@edu.tecnocampus.cat">Fesm'ho saber!</a></h6>
+    </div>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
@@ -499,7 +514,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
-    <script src="assets/individuals.js"></script>
+    <script src="assets/individuals.min.js"></script>
     <script src="assets/app.js"></script>
 </body>
 
